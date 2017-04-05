@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'carrierwave'
+require 'paperclip'
 require 'bootsy/engine'
 require 'bootsy/container'
 require 'bootsy/form_helper'

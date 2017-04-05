@@ -20,7 +20,10 @@ ActiveRecord::Schema.define(version: 20120710181942) do
   end
 
   create_table "bootsy_images", force: :cascade do |t|
-    t.string   "image_file"
+    t.string   "image_file_file_name"
+    t.string   "image_file_content_type"
+    t.integer  "image_file_file_size"
+    t.datetime "image_file_updated_at"
     t.integer  "image_gallery_id"
     t.datetime "created_at"
     t.datetime "updated_at"
