@@ -1,23 +1,25 @@
-# Bootsy
+# Bootsy - Paperclip
 
-[![Gem Version](https://badge.fury.io/rb/bootsy.svg)](http://badge.fury.io/rb/bootsy)
+<!-- [![Gem Version](https://badge.fury.io/rb/bootsy.svg)](http://badge.fury.io/rb/bootsy)
 [![Build Status](https://secure.travis-ci.org/volmer/bootsy.svg?branch=master)](http://travis-ci.org/volmer/bootsy)
 [![Dependency Status](https://gemnasium.com/volmer/bootsy.svg)](https://gemnasium.com/volmer/bootsy)
-[![Code Climate](https://codeclimate.com/github/volmer/bootsy.svg)](https://codeclimate.com/github/volmer/bootsy)
+[![Code Climate](https://codeclimate.com/github/volmer/bootsy.svg)](https://codeclimate.com/github/volmer/bootsy) -->
 
 *Bootsy* is a WYSIWYG editor for Rails based on
 [Bootstrap-wysihtml5](https://github.com/jhollingworth/bootstrap-wysihtml5) with image uploads using
-[CarrierWave](https://github.com/carrierwaveuploader/carrierwave).
+[Paperclip](https://github.com/thoughtbot/paperclip).
 
 ### Live demo
 
-* [bootsy-demo.herokuapp.com](http://bootsy-demo.herokuapp.com/)
-[![image](https://f.cloud.github.com/assets/301187/1365250/e1b7ba80-3854-11e3-9bfe-8bd1e090aca8.png)](http://bootsy-demo.herokuapp.com/)
+* TODO
+
+<!-- * [bootsy-demo.herokuapp.com](http://bootsy-demo.herokuapp.com/)
+[![image](https://f.cloud.github.com/assets/301187/1365250/e1b7ba80-3854-11e3-9bfe-8bd1e090aca8.png)](http://bootsy-demo.herokuapp.com/) -->
 
 
 ## Requirements
 
-* ImageMagick or GraphicsMagick (for MiniMagick);
+* ImageMagick
 * [Bootstrap 3](http://getbootstrap.com/) fully installed in your app.
 
 
@@ -54,9 +56,10 @@
   In your `app/assets/stylesheets/application.css`, put this line **after**
   requiring Bootstrap:
 
-  ```css
+  ```scss
   *= require bootsy
   ```
+
 
 4. Add and run migrations:
   ```console
