@@ -1,5 +1,10 @@
 # Bootsy Changelog
 
+## 2.5.0
+
+* Switched from CarrierWave 1.0 to Paperclip 5.0.
+  Of course **This is backwards incompatible**.
+
 ## 2.4.0
 
 * Full compatibility with Rails 5 (#244 thanks @dnswus).
