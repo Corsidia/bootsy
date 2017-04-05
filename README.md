@@ -27,7 +27,8 @@
 
 1. Add Bootsy to your Gemfile and `bundle install` it:
   ```ruby
-  gem 'bootsy'
+  # bootsy_paperclip is not available yet as a Gem, you should add it directly from github
+  gem 'bootsy', git: 'https://github.com/Corsidia/bootsy.git', branch: 'master'
   ```
 
   ```console
