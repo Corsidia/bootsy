@@ -13,18 +13,14 @@ Bootsy.Modal = function(area) {
 
   this.$el.on('click', '.bootsy-image .insert', function(event) {
     var img, imageObject;
-    var imagePrefix = '/' + $(this).attr('data-image-size') + '_';
+    var imageSize = $(this).attr('data-image-size');
 
     event.preventDefault();
-
-    if ($(this).data('image-size') === 'original') {
-      imagePrefix = '/';
-    }
 
     img = $(this).parents('.bootsy-image').find('img');
 
     imageObject = {
-      src: img.attr('src').replace('/thumb_', imagePrefix),
+      src: img.attr('src').replace('thumb', imageSize),
       alt: img.attr('alt').replace('Thumb_', '')
     };
 
