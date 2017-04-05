@@ -54,8 +54,8 @@ Bootsy.setup do |config|
   #   You can change the sorage mode below from :file to :fog if you want
   #   to use Amazon S3 and other cloud services. If you do that, please add
   #   'fog' to your Gemfile and create and configure your credentials in an
-  #   initializer file, as described in Carrierwave's docs:
-  #   https://github.com/carrierwaveuploader/carrierwave#using-amazon-s3
+  #   initializer file, as described in Paperclips's docs:
+  #   https://github.com/thoughtbot/paperclip#storage
   # config.storage = :file
   #
   #

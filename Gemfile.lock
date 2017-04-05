@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bootsy (2.4.0)
+    bootsy (2.5.0)
       paperclip (~> 5.0.0)
 
 GEM

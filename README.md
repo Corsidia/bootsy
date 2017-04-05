@@ -9,6 +9,10 @@
 [Bootstrap-wysihtml5](https://github.com/jhollingworth/bootstrap-wysihtml5) with image uploads using
 [Paperclip](https://github.com/thoughtbot/paperclip).
 
+## TODO
+
+Please note this should work but is still a **work in progress**. In particular it needs tests to be fixed because they still reference the [original branched version](https://github.com/volmer/bootsy) which uses CarrierWave instead of Paperclip.
+
 ### Live demo
 
 * TODO

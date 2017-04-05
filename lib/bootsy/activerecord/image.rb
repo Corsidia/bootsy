@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 module Bootsy
   # Public: Model to reference the actual image stored trough Bootsy.
-  # It contains the CarrierWave uploader and belongs to a
+  # It contains the Paperclip configuration and belongs to a
   # particular image gallery.
   class Image < ActiveRecord::Base
     belongs_to :image_gallery, touch: true
