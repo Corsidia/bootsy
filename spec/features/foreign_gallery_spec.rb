@@ -25,8 +25,7 @@ describe 'foreign gallery', type: :feature, js: true do
     click_on 'Create Comment'
     click_on 'Edit'
     click_on 'Insert image'
-    selector = "//div[contains(@class, 'bootsy-gallery')]//img[contains(@src, "\
-      "'/thumb_test.jpg')]"
+    selector = "//div[contains(@class, 'bootsy-gallery')]//img[contains(@src, 'thumb/test.jpg')]"
     expect(page).to have_selector(:xpath, selector, visible: true)
   end
 end
