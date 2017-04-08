@@ -6,6 +6,9 @@ AllCops:
 Metrics/MethodLength:
   Max: 15
 
+Metrics/LineLength:
+  Max: 120
+
 Rails:
   Enabled: true
 

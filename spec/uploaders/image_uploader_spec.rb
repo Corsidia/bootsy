@@ -1,5 +1,5 @@
+# frozen_string_literal: true
 # TODO: update with Papercip tests
-# # frozen_string_literal: true
 # require 'rails_helper'
 # require 'carrierwave/test/matchers'
 #
