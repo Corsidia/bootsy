@@ -11,10 +11,10 @@ describe 'image deletion', type: :feature, js: true do
     visit new_post_path
     click_on 'Insert image'
     attach_file 'image[image_file]', Rails.root.to_s + '/public/test.jpg'
+    sleep 2 # TODO: fix issue #1 fins(:css, selector) fails without sleep
   end
 
-  # TODO: fix issue #1 the first test in this file always fails, then the other two pass
-  it 'fails so that the following testss can pass' do
+  it 'fails whithout sleep' do
     find(:css, selector).click
   end
 

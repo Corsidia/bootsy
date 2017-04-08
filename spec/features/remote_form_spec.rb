@@ -8,7 +8,8 @@ describe 'remote form', type: :feature, js: true do
     fill_in 'Title', with: 'Awesome post'
     click_on 'Insert image'
     attach_file 'image[image_file]', Rails.root.to_s + '/public/test.jpg'
-    find('.bootsy-gallery img[src$="/thumb_test.jpg"]').click
+    sleep 2
+    find('.bootsy-gallery img[src*="/thumb/test.jpg"]').click
     script = "$('.dropdown-submenu .dropdown-menu').hide(); "\
       "$('a:contains(Small):visible').parent()."\
       "find('.dropdown-menu').show()"
@@ -24,6 +25,6 @@ describe 'remote form', type: :feature, js: true do
     sleep 1
     click_button 'Create Post'
 
-    expect(page).to have_css('#posts img[src$="/small_test.jpg"]')
+    expect(page).to have_css('#posts img[src*="/small/test.jpg"]')
   end
 end

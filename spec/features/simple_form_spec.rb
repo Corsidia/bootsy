@@ -6,8 +6,9 @@ describe 'simple form', type: :feature, js: true do
     visit new_simple_form_post_path
     click_on 'Insert image'
     attach_file 'image[image_file]', Rails.root.to_s + '/public/test.jpg'
+    sleep 2
     selector = "//div[contains(@class, 'bootsy-gallery')]//img[contains(@src, "\
-      "'/thumb_test.jpg')]"
+      "'/thumb/test.jpg')]"
 
     expect(page).to have_selector(:xpath, selector, visible: true)
   end

@@ -24,8 +24,8 @@ describe 'image insertion', type: :feature, js: true do
       visit new_post_path
       click_on 'Insert image'
       attach_file 'image[image_file]', Rails.root.to_s + '/public/test.jpg'
-
-      find('.bootsy-gallery img').click
+      sleep 2 # TODO: fix issue #1 fins(:css, selector) fails without sleep
+      find('.bootsy-gallery img[src*="thumb/test.jpg"]').click
       size = size_position.first
       position = size_position.last
       script = "$('.dropdown-submenu .dropdown-menu').hide(); "\
@@ -37,7 +37,7 @@ describe 'image insertion', type: :feature, js: true do
       content = page.evaluate_script(
         'Bootsy.areas.post_content.editor.getValue()'
       )
-      img_src = "/#{size.downcase}_test.jpg"
+      img_src = "/#{size.downcase}/test.jpg"
       img_src = 'test.jpg' if size == 'Original'
       expect(content).to include(img_src)
       expect(content).to include("align=\"#{position.downcase}\"")
