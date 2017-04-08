@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 # Gems used by the dummy application
 gem 'bootstrap-sass'
 gem 'jquery-rails'
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 4.2.8'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'sprockets-rails'
