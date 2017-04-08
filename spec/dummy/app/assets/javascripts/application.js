@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require bootsy
-//= require bootsy/locales/pt-BR
+//= require bootsy/locales/en
 //= require_tree .
